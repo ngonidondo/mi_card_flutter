@@ -11,15 +11,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
+          child: Row(
+            mainAxisSize: MainAxisSize.max,
             verticalDirection: VerticalDirection.up,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
                 color: Colors.red[100],
                 child: Text("Container 1"),
-                height: 100.0,
+                height: double.maxFinite,
                 width: 100.0,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
                 padding: EdgeInsets.all(12.0),
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
               Container(
                 color: Colors.red[300],
                 child: Text("Container 3"),
-                height: 100.0,
+                height: double.maxFinite,
                 width: 100.0,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
                 padding: EdgeInsets.all(12.0),
