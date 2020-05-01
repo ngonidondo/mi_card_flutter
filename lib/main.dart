@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blueGrey[500],
         body: SafeArea(
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage("assets/profile.jpg"),
+                backgroundImage: AssetImage('assets/profile.jpg'),
               ),
             ],
           ),
