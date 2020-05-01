@@ -13,12 +13,30 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            verticalDirection: VerticalDirection.up,
+            verticalDirection: VerticalDirection.down,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage('assets/profile.jpg'),
+              ),
+              Text(
+                'Ngoni Dondo',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Rancho',
+                ),
+              ),
+              Text(
+                'Flutter Developer',
+                style: TextStyle(
+                  fontSize: 25.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w200,
+                  fontFamily: 'SourceSansPro',
+                ),
               ),
             ],
           ),
