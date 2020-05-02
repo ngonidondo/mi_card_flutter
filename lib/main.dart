@@ -38,54 +38,50 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'SourceSansPro',
                 ),
               ),
-              Container(
-                color: Colors.black45,
-                margin: EdgeInsets.symmetric(vertical: 5, horizontal: 80),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.brown[300],
-                      size: 22,
-                    ),
-                    SizedBox(
-                      width: 25.0,
-                    ),
-                    Text(
-                      "613-999-9999",
-                      style: TextStyle(
-                        fontSize: 17.0,
-                        color: Colors.white,
-                        fontFamily: 'SourceSansPro',
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                height: 5,
+                width: 180,
+                child: Divider(
+                  color: Colors.black45,
+                  thickness: 2,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.black45,
-                margin: EdgeInsets.symmetric(vertical: 0, horizontal: 80),
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.brown[300],
-                      size: 22,
+                margin: EdgeInsets.symmetric(vertical: 2, horizontal: 60),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.brown[300],
+                    size: 22,
+                  ),
+                  title: Text(
+                    "+1-xxx-xxx-xxxx",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.white,
+                      fontFamily: 'SourceSansPro',
                     ),
-                    SizedBox(
-                      width: 25.0,
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.black45,
+                margin: EdgeInsets.symmetric(vertical: 2, horizontal: 60),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.brown[300],
+                    size: 22,
+                  ),
+                  title: Text(
+                    "ngonidondo@gmail.com",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.white,
+                      fontFamily: 'SourceSansPro',
                     ),
-                    Text(
-                      "ngonidondo@gmail.com",
-                      style: TextStyle(
-                        fontSize: 17.0,
-                        color: Colors.white,
-                        fontFamily: 'SourceSansPro',
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
